@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="887d4dc2-1809-458a-8951-59ae436c518e" name="Changes" comment="Progress again again">
+    <list default="true" id="887d4dc2-1809-458a-8951-59ae436c518e" name="Changes" comment="Final before coment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -107,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782675524283</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Final before coment">
+      <option name="closed" value="true" />
+      <created>1782679175542</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782679175542</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +137,7 @@
     <MESSAGE value="Progress" />
     <MESSAGE value="Progress again" />
     <MESSAGE value="Progress again again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress again again" />
+    <MESSAGE value="Final before coment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final before coment" />
   </component>
 </project>
