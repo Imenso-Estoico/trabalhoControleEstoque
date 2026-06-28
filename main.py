@@ -66,20 +66,15 @@ while True:
         inventory = open("estoque.txt", "r")
         print("\nAtualmente no estoque: \n" + inventory.read())
         inventory.close()
+
     elif choice == 3:
         inventory = open("estoque.txt","r")
-        i=1
-        for line in inventory:
-            print(i,end=")")
+        lines = inventory.readlines()
+        i = 1
+        for line in lines:
+            print(f'{i}){line}', end="")
             i += 1
-            for word in line.split():
-                """if not word.isdigit():
-                    print(word, end=" ")
-                else:
-                    numRetrieve = int(input("Digite o número para ser retirado."))
-                    print(f'{int(word)-numRetrieve}', end=" ")
-            print()"""
-
+        indexChoice = int(input("Escolha o produto\n>>")) - 1
 
     elif choice == 4:
         log = open("historico.txt", "r")
