@@ -75,6 +75,19 @@ while True:
             print(f'{i}){line}', end="")
             i += 1
         indexChoice = int(input("Escolha o produto\n>>")) - 1
+        productData = lines[indexChoice].strip().split()
+        nameProduct = productData[0]
+        currentQuantity = productData[1]
+
+        numberRemove = int(input("Informe a quantidade de unidades a ser removida.\n>>"))
+
+        if numberRemove < int(currentQuantity):
+            lines[indexChoice] = f'{nameProduct} {int(currentQuantity) - numberRemove}'
+            inventory = open("estoque.txt","w")
+            inventory.writelines(lines)
+            print(lines[indexChoice])
+
+
 
     elif choice == 4:
         log = open("historico.txt", "r")
