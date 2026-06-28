@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="887d4dc2-1809-458a-8951-59ae436c518e" name="Changes" comment="Progress again">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="887d4dc2-1809-458a-8951-59ae436c518e" name="Changes" comment="Progress again again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -101,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782669260371</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Progress again again">
+      <option name="closed" value="true" />
+      <created>1782675524283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782675524283</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +128,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Progress" />
     <MESSAGE value="Progress again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress again" />
+    <MESSAGE value="Progress again again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress again again" />
   </component>
 </project>

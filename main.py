@@ -56,7 +56,7 @@ while True:
             print("Escreva o nome do responsável: ")
             actor = input()
             log = open("historico.txt","a")
-            log.write(productNameInput + "+" + productNumberInput + " " + actor + " " + time.ctime() + "\n")
+            log.write(productNameInput + " +" + productNumberInput + " " + actor + " " + time.ctime() + "\n")
 
             print("Gostaria de adicionar outro produto? s/n.")
             keyInput = input()
@@ -74,19 +74,35 @@ while True:
         for line in lines:
             print(f'{i}){line}', end="")
             i += 1
-        indexChoice = int(input("Escolha o produto\n>>")) - 1
-        productData = lines[indexChoice].strip().split()
-        nameProduct = productData[0]
-        currentQuantity = productData[1]
 
-        numberRemove = int(input("Informe a quantidade de unidades a ser removida.\n>>"))
+        indexChoice = int(input("\nEscolha o produto\n>>")) - 1
+        if 0 < indexChoice +1 <= len(lines):
+            productData = lines[indexChoice].strip().split()
+            nameProduct = productData[0]
+            currentQuantity = productData[1]
 
-        if numberRemove < int(currentQuantity):
-            lines[indexChoice] = f'{nameProduct} {int(currentQuantity) - numberRemove}'
-            inventory = open("estoque.txt","w")
+            numberRemove = int(input("Informe a quantidade de unidades a ser removida.\n>>"))
+
+            if numberRemove < int(currentQuantity):
+                lines[indexChoice] = f'{nameProduct} {int(currentQuantity) - numberRemove}\n'
+                print(lines[indexChoice])
+                print("Escreva o nome do responsável: ")
+                actor = input()
+                log = open("historico.txt", "a")
+                log.write(f'{nameProduct} -{numberRemove} {actor} {time.ctime()}\n')
+            elif numberRemove == int(currentQuantity):
+                lines.pop(indexChoice)
+                print("Escreva o nome do responsável: ")
+                actor = input()
+                log = open("historico.txt", "a")
+                log.write(f'{nameProduct} -{numberRemove} {actor} {time.ctime()}\n')
+            else:
+                print("Quantidade inválida")
+
+            inventory = open("estoque.txt", "w")
             inventory.writelines(lines)
-            print(lines[indexChoice])
-
+        else:
+            print("Escolha inválida")
 
 
     elif choice == 4:
